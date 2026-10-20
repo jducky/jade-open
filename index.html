@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한지안 | 포트폴리오</title>
+<meta name="description" content="풀스택 개발자 한지안의 개인 소개 페이지 (가상 데이터)">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <a class="brand" href="#top">JH.</a>
+  <div class="links">
+    <a href="#about">소개</a><a href="#skills">기술</a><a href="#projects">프로젝트</a>
+    <a href="#experience">경력</a><a href="#writing">글·발표</a><a href="#contact">연락</a>
+  </div>
+  <button id="theme" aria-label="테마 전환">◐</button>
+</nav>
+
+<header class="hero" id="top">
+  <div class="avatar" aria-hidden="true">JH</div>
+  <h1 id="name"></h1>
+  <p class="role" id="role"></p>
+  <p class="tagline" id="tagline"></p>
+  <p class="loc" id="loc"></p>
+  <div class="stats" id="stats"></div>
+</header>
+
+<main>
+  <section id="about"><h2>소개</h2><div id="about-body"></div>
+    <h3>요즘 근황</h3><ul class="plain" id="now"></ul></section>
+
+  <section id="skills"><h2>기술 스택</h2><div class="grid3" id="skills-body"></div></section>
+
+  <section id="projects"><h2>프로젝트</h2>
+    <div class="filters" id="filters"></div>
+    <div class="cards" id="projects-body"></div></section>
+
+  <section id="experience"><h2>경력</h2><div class="timeline" id="exp-body"></div>
+    <h3>학력 · 자격</h3><div class="timeline" id="edu-body"></div></section>
+
+  <section id="writing"><h2>글 · 발표 · 수상</h2>
+    <div class="grid3">
+      <div><h3>블로그</h3><ul class="plain" id="articles"></ul></div>
+      <div><h3>발표</h3><ul class="plain" id="talks"></ul></div>
+      <div><h3>수상</h3><ul class="plain" id="awards"></ul></div>
+    </div></section>
+
+  <section id="reviews"><h2>동료들의 이야기</h2><div class="grid3" id="reviews-body"></div></section>
+
+  <section id="contact"><h2>연락처</h2><ul class="plain" id="contact-body"></ul></section>
+</main>
+
+<footer>이 페이지의 모든 정보는 가상의 데이터입니다 · © 2026</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
